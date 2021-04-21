@@ -1,0 +1,633 @@
+/* --------------Index-fil---------------- */
+
+
+.hero-image {
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    background-image: url('../images/forsidee.jpeg');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.container {
+    position: absolute;
+    top: 58%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.logo {
+    position: absolute;
+    max-width: 70%;
+    left: 0;
+    top: -30%;
+    right: 0;
+    bottom: 0;
+    display: block;
+    margin: auto;
+}
+
+
+
+.button {
+    background: #fff;
+    padding: 10px 30px;
+    margin: 10px;
+    color: #34495e;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    transition: 0.4s;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+}
+
+.button:hover {
+    background: #34495e;
+    color: #fff;
+}
+
+.button2 {
+    background: #fff;
+    padding: 10px 30px;
+    color: #34495e;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 150px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    transition: 0.4s;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+}
+
+.button2:hover {
+    background: #34495e;
+    color: #fff;
+}
+
+.popup {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    top: 10%;
+    left: 4%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+@media screen and (min-width:800px) {
+    .popup {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 11%;
+        left: 0%;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.popup-content {
+    height: 200px;
+    width: 450px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;
+}
+
+input {
+    margin: 20px auto;
+    display: block;
+    width: 50%;
+    padding: 8px;
+    border: 1px solid gray;
+}
+
+.close {
+    position: absolute;
+    top: -2px;
+    right: -2px;
+    background: #fff;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    cursor: pointer;
+}
+
+/* --------------For beboere---------------- */
+.button3 {
+    background: #fff;
+    text-align: center;
+    padding: 10px 25px;
+    margin: 10px;
+    color: #8a8688;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: 18px;
+    border-radius: 5px;
+    width: 200px;
+    box-shadow: 6px 6px 29px -4px rgba(0, 0, 0, 0.75);
+    text-decoration: none;
+    transition: 0.4s;
+    display: inline-block;
+    font-family: 'Oswald', sans-serif;
+}
+
+.button3:hover {
+    background: #8a8688;
+    color: #fff;
+}
+
+/* --------------Forum---------------- */
+
+.logo2 {
+    height: 90px;
+}
+
+.nav-link {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: white !important;
+    font-size: 18px;
+}
+
+a:hover {
+    background: #8a8688;
+}
+
+.bg-custom {
+    background-image: url('../images/nav3.png');
+    position: fixed;
+}
+
+
+
+
+/* --------------Find vej---------------- */
+
+@media screen and (max-width: 500px) {
+
+    .drej {
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        position: absolute; 
+    }
+
+    #map {
+        display: none;
+    }
+
+    #features {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 505px) {
+
+    .drej {
+        display: none;
+    }
+}
+
+#map {
+    position: absolute;
+    top: 115px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
+
+#map {
+    position: fixed;
+    width: 50%;
+}
+
+#features {
+    width: 50%;
+    margin-left: 50%;
+    font-family: sans-serif;
+    overflow-y: scroll;
+    background-color: #fafafa;
+}
+
+section {
+    padding: 15px 25px;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+    opacity: 0.25;
+    font-size: 13px;
+}
+
+section.active {
+    opacity: 1;
+}
+
+section:last-child {
+    border-bottom: none;
+    margin-bottom: 200px;
+}
+
+.findvej {
+    width: 350px;
+    height: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h3 {
+    text-align: center;
+}
+
+
+/*-----Faciliteter------*/
+
+.kollegiet {
+    width: 100%;
+    height: 100%;
+    z-index: 10000000;
+}
+
+.hidden {
+    display: none;
+}
+
+.overskrift {
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+    margin-top: 25px;
+}
+
+/*--pin nål placering---*/
+.pin1 {
+    top: 45%;
+    left: 70%;
+    position: absolute;
+    max-width: 15%;
+}
+
+.pin2 {
+    top: 58%;
+    left: 70%;
+    position: absolute;
+    max-width: 15%;
+}
+
+
+.pin4 {
+    top: 70%;
+    left: 80%;
+    position: absolute;
+    max-width: 15%;
+}
+
+.pin5 {
+    top: 90%;
+    left: 80%;
+    position: absolute;
+    max-width: 15%;
+}
+
+/*--Motionsgraphics placering---*/
+.fllesrum {
+    max-width: 100%;
+    top: 53%;
+    left: 1%;
+    position: absolute;
+    z-index: 5;
+}
+
+.motionsrum {
+    max-width: 100%;
+    top: 15%;
+    left: 1%;
+    position: absolute;
+}
+
+
+
+.studierum {
+    max-width: 100%;
+    top: 28%;
+    left: 1%;
+    position: absolute;
+}
+
+.vaskerum {
+    max-width: 100%;
+    top: 48%;
+    left: 1%;
+    position: absolute;
+}
+
+@media screen and (min-width:800px) {
+
+    /*--pin nål placering på computer---*/
+    .pin1 {
+        top: 25%;
+        left: 70%;
+        position: absolute;
+        max-width: 15%;
+    }
+
+    .pin2 {
+        top: 58%;
+        left: 70%;
+        position: absolute;
+        max-width: 15%;
+    }
+
+    .pin4 {
+        top: 100%;
+        left: 70%;
+        position: absolute;
+        max-width: 15%;
+    }
+
+    .pin5 {
+        top: 200%;
+        left: 60%;
+        position: absolute;
+        max-width: 15%;
+    }
+
+    /*--Motionsgraphics placering på computer---*/
+    .fllesrum {
+        max-width: 70%;
+        z-index: 10;
+        top: 35%;
+        left: 1%;
+        position: absolute;
+    }
+
+    .motionsrum {
+        max-width: 70%;
+        z-index: 5;
+        top: 50%;
+        left: 1%;
+        position: absolute;
+    }
+
+
+    .studierum {
+        max-width: 50%;
+        top: 70%;
+        left: 18%;
+        position: absolute;
+    }
+
+    .vaskerum {
+        max-width: 60%;
+        top: 130%;
+        left: 10%;
+        position: absolute;
+    }
+
+}
+
+/*---ledigelejligheder--*/
+.carousel-inner img {
+    width: 60%;
+    height: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    height: 100px;
+    width: 100px;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-image: none;
+}
+
+.pris {
+    max-width: 90%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+/*---fællesarrangement--*/
+
+h1 {
+    text-align: center;
+    color: black;
+    font-size: 207%;
+}
+
+h4 {
+    text-align: center;
+    color: black;
+}
+
+h5 {
+    text-align: center;
+    color: black;
+}
+
+h6 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+.fælles {
+    width: 250px;
+    height: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/*---------forum---------*/
+.forum {
+    text-align: center;
+    margin-top: 10%;
+    font-family: 'Oswald', sans-serif;
+}
+
+.run {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+.running-text {
+    padding: 5%;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+
+}
+
+.strikke {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+.knitting-text {
+    padding: 5%;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.mad {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+.food-text {
+    padding: 5%;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+.pokemon {
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 7%;
+}
+
+.pokemon-text {
+    padding: 5%;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+@media screen and (min-width:800px) {
+    .forum {
+        text-align: center;
+        margin: 5%;
+    }
+
+    .run {
+        width: 80%;
+    }
+
+    .strikke {
+        width: 1600%;
+    }
+
+    .mad {
+        width: 80%;
+    }
+
+    .pokemon {
+        width: 90%;
+
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 1px 1px;
+        margin: 5%;
+        grid-template-areas:
+            "running-club running-text"
+            "knitting knitting-text"
+            "food- food-text"
+            "pokemon pokemon-text";
+    }
+
+    .running-club {
+        grid-area: running-club;
+
+    }
+
+    .running-text {
+        grid-area: running-text;
+    }
+
+    .knitting {
+        grid-area: knitting;
+        width: 5%;
+    }
+
+    .knitting-text {
+        grid-area: knitting-text;
+    }
+
+    .food- {
+        grid-area: food-;
+    }
+
+    .food-text {
+        grid-area: food-text;
+    }
+
+    .pokemon {
+        grid-area: pokemon;
+    }
+
+    .pokemon-text {
+        grid-area: pokemon-text;
+    }
+}
+
+
+/*--Kontakt--*/
+.surpedel {
+    height: 100%;
+    width: 100%;
+}
+
+article {
+    padding: 25px 50px;
+    line-height: 25px;
+    border-bottom: 1px solid #ddd;
+    font-size: 13px;
+    font-family: 'Oswald', sans-serif;
+    text-align: center;
+}
+
+/*---footer --*/
+
+.footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+}
+
+
+/*------lånecentralen-----*/
+.bus {
+    width: 100%;
+    height: 100%;
+    z-index: 10000000;
+}

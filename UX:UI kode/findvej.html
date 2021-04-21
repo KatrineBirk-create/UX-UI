@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <title>Åpark Kollegiet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Nikolaj, Katrine, Joakim & Michelle">
+    <meta name="keywords" content="">
+
+    <!--My Own Css-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+
+    <!-- External bootstrap css cdn -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- External Jquery Bootstrap -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- External JavaScript Bootstrap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- External JavaScript Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- Mapbox API -->
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.css" rel="stylesheet">
+
+    <script src="https://api.mapbox.com/mapbox-gl-js/v2.2.0/mapbox-gl.js"></script>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-md sticky-top bg-custom navbar-dark">
+    <a class="navbar-brand" href="blivbeboer.html"><img src="images/logo2.png" class="logo2" alt="logo"></a>
+
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse text-center" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link active bg-dark" href="#">Find vej</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="ledigelejligheder.html">Ledige lejligheder</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="kontakt.html">Kontakt</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="blivbeboer.html">Tilbage til start</a>
+            </li>
+
+        </ul>
+    </div>
+</nav>
+
+
+
+
+<img src="images/drej.png" class= "drej" alt="Rotate phone to landscape mode">
+    <!-- website begins -->
+
+    <article class="map-feature" id="go-to">
+        <div class="map" style="position: absolute; width: 100%; height: 100%;">
+            <div id='map'></div>
+        </div>
+    </article>
+    
+    <div id="features">
+        <section id='intro' class='active'>
+            <h1>Kort over området</h1>
+            <p> Åpark kollegiet ligger i hjertet af Aarhus. <br> På kortet kan du bla. finde nærmeste indkøbsmuligheder, uddannelsesmuligheder, cafeer og meget mere! </p>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section id='kolle'>
+            <br><br>
+            <br><br>
+            <h3>Åpark kollegiet</h3>
+            <img src="images/åpark.png" class="findvej" alt="Åpark kollegiet">
+            <h4>Åpark Kollegiet, Åparken 1, 3, 5 og 7, 8000 Aarhus C</h4>
+            <p> Kollegiekontoret påbegyndte i efteråret 2010 byggeriet af et nyt stort kollegium med 251 lejligheder. Den første del af byggeriet blev klar til indflytning den 16/1-2012. Anden og sidste etape blev klar til indflyting i juli 2012.
+                <br><br>
+                Kollegiet rummer<br>
+                201 stk. 1-værelses lejligheder<br>
+                50 stk. 2-værelses lejligheder.
+            </p>
+            <a href="http://www.kollegiekontoret.dk/kollegier/aapark-kollegiet/forside/" target="_blank">Læs mere om kollegiet</a>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section id='netto' class='active'>
+            <br><br>
+            <h2>Indkøbsmuligheder:</h2>
+            <br><br>
+            <h3>Netto</h3>
+            <img src="images/netto.png" class="findvej" alt="Netto tæt på kollegiet">
+            <h4>Thorvaldsensgade 22, 24, 8000 Aarhus C</h4>
+            <p> Spotvarer til spotpriser! <br> Netto var alt hvad man skal bruge og til gode priser. </p>
+            <br><br>
+            <br><br> 
+        </section>
+
+        <section id='føtex'>
+            <br><br>
+            <br><br>
+            <h3>Føtex</h3>
+            <img src="images/fotex.JPG" class="findvej" alt="Føtex tæt på kollegiet">
+            <h4>Ceres Allé 20, 8000 Aarhus C</h4>
+            <p> I Føtex kan du både købe dagligvarer online eller alt til hjem og fritid. Du kan også bestille mad ud af huset til både hverdag og festlige begivenheder. <br>Altid gode tilbud. </p>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section id='uni'>
+            <br><br>
+            <h2>Uddannelses muligheder:</h2>
+            <br><br>
+            <h3>Aarhus Universitet</h3>
+            <img src="images/uni.png" class="findvej" alt="Billede af Aarhus universitet">
+            <h4>Nordre Ringgade 1, 8000 Aarhus C</h4>
+            <p> Aarhus Universitet er Danmarks næststørste universitet målt på studenterbestand og det næstældste. Universitetet blev etableret i 1928 i Aarhus og tæller i dag omkring 38.000 studerende.
+            </p>
+            <a href="https://www.au.dk" target="_blank">Læs mere om Aarhus universitet</a>
+            <br><br>
+            <br><br>
+        </section> 
+
+        <section id='via'>
+            <br><br>
+            <br><br>
+            <h3>VIA University College</h3>
+            <img src="images/via.JPG" class="findvej" alt="Billede af Aarhus universitet">
+            <h4>Ceresbyen 24, 8000 Aarhus C</h4>
+            <p> Campus Aarhus C ligger lige midt i Aarhus. Her bliver du en del af et moderne studiemiljø sammen med 16 forskellige danske og internationale uddannelser og mere end 7.000 studerende.
+            </p>
+            <a href="https://www.via.dk/uddannelser/moed-via/campusser/aarhus-c?gclid=EAIaIQobChMIn-uP0rn97wIVl0eRBR3bPAJvEAAYASAAEgJvOfD_BwE" target="_blank">Læs mere om Aarhus universitet</a>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section id='tech'>
+            <br><br>
+            <br><br>
+            <h3>Aarhus tech</h3>
+            <img src="images/tec.JPG" class="findvej" alt="Billede af Aarhus tech">
+            <h4>Halmstadgade 6, 8200 Aarhus C</h4>
+            <p> Gå på opdagelse i vores 28 erhvervsuddannelser – du finder med garanti en, der matcher dig og dine drømme. <br>God fornøjelse.</p>
+            <a href="https://www.aarhustech.dk" target="_blank">Læs mere om Aarhus tech</a>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section id='viby'>
+            <br><br>
+            <br><br>
+            <h3>Erhvervsakademiet Aarhus</h3>
+            <img src="images/viby.png" class="findvej" alt="Billede af erhvervsakademiet Aarhus i Viby">
+            <h4>Ringvej Syd 104, 8260 Viby J</h4>
+            <p> Vi tilbyder akademi- og diplomuddannelser samt kurser og skræddersyede forløb. Få efteruddannelsen som matcher dine karrieredrømme med en times gratis karrieresparring. Læs ved siden af dit job. Kompetencegivende udd. Styrk dine kompetencer.</p>
+            <a href="https://www.eaaa.dk" target="_blank">Læs mere om erhvervsakademiet Aarhus</a>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section id='plante'>
+            <br><br>
+            <h2>Cafeer i nærheden:</h2>
+            <br><br>
+            <h3>Plantecafeen</h3>
+            <img src="images/plante.png" class="findvej" alt="plantecafeen som ligger tæt på kollegiet">
+            <h4>Kjeld Tolstrups Gade 12, 8000 Aarhus C</h4>
+            <p>Fantastisk omgivelser, der gøre dig godt når du besøger stedet. <br>
+                Fra det øjeblik man træder ind af døren til plantecaféen, glemmer man alt om stress og jag, da de grønne plante over alt, får dig til at sænke parderne og bare slappe af nyde det gode bagværk. </p>
+            <a href="http://www.plukk.dk" target="_blank">Læs mere om cafeen</a>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section id='ven'>
+            <br><br>
+            <br><br>
+            <h3>Café FolkeVen</h3>
+            <img src="images/folkeven.png" class="findvej" alt="Cafe folkeven som er en cafe tæt på kollegiet">
+            <h4>Thorvaldsensgade 17, 8000 Aarhus C</h4>
+            <p> Cafe FolkeVen er en lille hyggelig lokal cafe, der tilbyder morgenmad, kaffe, kage, sandwich, salater og en gryderet to go eller to stay. Fint udvalg af glutenfri og laktosefri produkter. Alt er lavet af lækre, friske råvarer og til rimelige priser. </p>
+            <a href="https://www.cafefolkeven.dk" target="_blank">Læs mere om cafeen</a>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section id='malt'>
+            <br><br>
+            <br><br>
+            <h2>En kold øl? </h2>
+            <h3>MALT fest og event</h3>
+            <img src="images/malt.png" class="findvej" alt="Malt fest og event ligger i ceres byen og serverer øl">
+            <h4>Thorvaldsensgade 33, 8000 Aarhus C</h4>
+            <p>Kom og smag en skummende specialøl fra Kissmeyer, mens du nyder delikate a la carte-retter. Hos Malt sidder du i helt unikke rammer fra dengang da det historiske Ceres Bryggeri hørte til i det centrale Aarhus. <br>Det er råt - og elegant. </p>
+            <a href="https://malt.dk" target="_blank">Læs mere</a>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section id='serec'>
+            <br><br>
+            <br><br>
+            <h3>Serec</h3>
+            <img src="images/serec.JPG" class="findvej" alt="væskebalancen er et sted nede i byen hvor man kan købe alkohol">
+            <h4>Ceresbyen 20, 8000 Aarhus C</h4>
+            <p> Vi kan levere mad ud af huset, fra vores menukort eller kontakt os hvis du har specielle ønsker.
+                <br>Du kan også låne vores lokaler til diverse arrangementer.
+            </p>
+            <a href="https://serec.dk" target="_blank">Læs mere</a>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section id='væske'>
+            <br><br>
+            <br><br>
+            <h3>Væskebalancen</h3>
+            <img src="images/væske.png" class="findvej" alt="væskebalancen er et sted nede i byen hvor man kan købe alkohol">
+            <h4>Vestergade 64, 8000 Aarhus C</h4>
+            <p> Et par erfarne gutter har åbnet den nye bottle shop Væskebalancen. <br> Nick Theilgaard Olesen driver til dagligt ølbaren Mig og Ølsnedkeren i Mejlgade. Bag Væskebalancen står desuden Lars Nielsen, der har importeret øl til Danmark i 26 år. </p>
+            <a href="https://smagaarhus.dk/vaeske-balancen-bottle-shop-aarhus/" target="_blank">Læs mere</a>
+            <br><br>
+            <br><br>
+        </section>
+
+        <section>
+
+            <p> Dette var blot et udpluk af Åpark kollegiets skønne omgivelser. I en by som Aarhus som er Danmarks næststørste og Jyllands største byområde, kommer du til at bo midt i det hele, og omgivet af unge mennekser. <br><br> Har dette fanget din interesse, så vil vi hellere end gerne høre fra dig, og besvare eventuelle spørgsmål! <br> Vi ser frem til at høre fra dig. </p>
+            <a href="https://ungdomsboligaarhus.dk/dept/0133/index" target="_blank">mere info her</a>
+        </section>
+    </div>
+
+    <!-- end features -->
+
+
+
+    <script>
+        mapboxgl.accessToken = 'pk.eyJ1IjoibWljaGVsbGUxMjM0NSIsImEiOiJja244ankwaTEwNHB5Mm5ueTBrZnVuOHozIn0.eTZgv0Jy0lFTJ6H1KEDw5w';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/michelle12345/cknfpa4iz0aup17p8h5gw0zqb',
+            center: [10.206694028676393, 56.18075080052863],
+            zoom: 9,
+            bearing: 27,
+            pitch: 20
+        });
+
+
+        var chapters = {
+            'intro': {
+                center: [10.206694028676393, 56.18075080052863],
+                zoom: 9,
+            },
+            'kolle': {
+                bearing: 90,
+                center: [10.187942226892932, 56.154792741776355],
+                zoom: 18
+            },
+
+
+            'netto': {
+                bearing: 90,
+                center: [10.19681510191193, 56.15657155679368],
+                zoom: 18,
+                pitch: 40
+            },
+            'føtex': {
+                bearing: 45,
+                center: [10.188165722472577, 56.15518210209235],
+                zoom: 17,
+                pitch: 10
+            },
+
+
+
+            'uni': {
+                bearing: 45,
+                center: [10.202075408214025, 56.167889791282526],
+                zoom: 15.3,
+                pitch: 20
+            },
+            'via': {
+                bearing: 45,
+                center: [10.190535079247164, 56.15602550435145],
+                zoom: 17,
+                pitch: 20
+            },
+            'tech': {
+                bearing: 10,
+                center: [10.187557226385945, 56.155888124216176],
+                zoom: 17,
+                pitch: 50
+            },
+            'viby': {
+                bearing: 45,
+                center: [10.149912574075486, 56.11715223911281],
+                zoom: 18,
+                pitch: 20,
+
+            },
+
+
+            'plante': {
+                bearing: 90,
+                center: [10.193704180416422, 56.154327032667894],
+                zoom: 18,
+                pitch: 40
+            },
+            'ven': {
+                bearing: 90,
+                center: [10.19690614659506, 56.155903263718244],
+                zoom: 19
+            },
+
+
+            'malt': {
+                bearing: 90,
+                center: [10.193848871514009, 56.15693525286676],
+                zoom: 19
+            },
+
+            'serec': {
+                bearing: 90,
+                center: [10.189466064140879, 56.155759091189466],
+                zoom: 19
+            },
+
+            'væske': {
+                bearing: 90,
+                center: [10.200353758595357, 56.15751214924906],
+                zoom: 19
+            },
+
+        };
+
+        // On every scroll event, check which element is on screen
+        window.onscroll = function() {
+            var chapterNames = Object.keys(chapters);
+            for (var i = 0; i < chapterNames.length; i++) {
+                var chapterName = chapterNames[i];
+                if (isElementOnScreen(chapterName)) {
+                    setActiveChapter(chapterName);
+                    break;
+                }
+            }
+        };
+
+        var activeChapterName = 'baker';
+
+        function setActiveChapter(chapterName) {
+            if (chapterName === activeChapterName) return;
+
+            map.flyTo(chapters[chapterName]);
+
+            document.getElementById(chapterName).setAttribute('class', 'active');
+            document.getElementById(activeChapterName).setAttribute('class', '');
+
+            activeChapterName = chapterName;
+        }
+
+        function isElementOnScreen(id) {
+            var element = document.getElementById(id);
+            var bounds = element.getBoundingClientRect();
+            return bounds.top < window.innerHeight && bounds.bottom > 0;
+        }
+
+    </script>
+
+</body>
+
+</html>
